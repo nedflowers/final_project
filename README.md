@@ -1,4 +1,4 @@
-# Cannabis and Hemp Sales Study
+# Oregon Cannabis and Hemp Sales Study
 
 ## Overview
 Hemp and Cannabis are being studied like never before. With 18 states passing laws decriminalizing and allowing state-licensed sales of cannabis, it’s becoming less of a taboo, and making its way into mainstream. You can find CBD infused products at gas stations, grocery stores, corner stores and even large nation-wide retailers. This sparked our curiosity. Believing and witnessing first-hand the benefits of hemp and cannabis at a medical level, and with full-support of adult-use legalization, we are setting out to answer a question. Will sales of these highly available CBD items catch-up to profits brought in by recreational marijuana dispensaries?
