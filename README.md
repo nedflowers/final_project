@@ -6,15 +6,16 @@ Hemp and Cannabis are being studied like never before. With 18 states passing la
 With the help of neural networks and machine learning, use the State of Oregon’s Marijuana Market Open Database to track and compare sales of THC vs CBD items. Determine if Oregon’s sales of CBD items will eventually meet the sales and profitability of recreational marijuana products. If that’s a possibility, how much time will it take
 
 ## Sources
-# Oregon Marijuana Market Data
+
+### Oregon Marijuana Market Data
 https://www.oregon.gov/olcc/marijuana/Pages/Marijuana-Market-Data.aspx
 
 https://data.olcc.state.or.us/t/OLCCPublic/views/MarketDataTableau/MainScreen
 
-# Headset Industry Reports
+### Headset Industry Reports
 https://www.headset.io/industry-reports
 
-## Communication Protocols
+### Communication Protocols
 -	Check Slack daily, be aware of any conversation in the group chat.
 
 -	Discord or Zoom voice meetings once a week, minimum, outside of class.
