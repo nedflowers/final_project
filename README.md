@@ -23,10 +23,10 @@ https://www.headset.io/industry-reports
 -	Team Lead will transcribe notes at each meeting on Google Docs, accessible to all team members.
 
 ### Database 
-https://github.com/nedflowers/final_project/blob/main/PostGreCreateTableSQL.md
+https://github.com/nedflowers/final_project/blob/main/first_segment/PostGreCreateTableSQL.md
 
 ### Model 
 
-https://github.com/nedflowers/final_project/blob/main/ML_Mockup.ipynb
+https://github.com/nedflowers/final_project/blob/main/first_segment/ML_Mockup.ipynb
 
 ## Summary
