@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+other dataset/
+Workwithdata.ipynb
+ProductCategoryDrilldownFullData.csv
+fren-z7jq.csv
+MassState_MarijuanaEstablishmentFacilityStatistics_fren-z7jq_DataWork.ipynb
+postgrebkupcanabistable.sql
