@@ -1,1 +1,6 @@
-# final_project
+# Final Project for Data Analytics
+For our final project we chose to study data for the cannabis industry in Oregon. We chose this new and emerging market because Hemp and Cannabis are being studied like never before, and because of its increased legality we now have access to cannabis data sets that didn't exist 10 years ago. With 18 states passing laws decriminalizing and allowing state-licensed sales of cannabis, it’s becoming less of a taboo, and making its way into mainstream. You can even find CBD infused products at gas stations, grocery stores, corner stores and even large nation-wide retailers where cannabis is still illegal. CDB is a non-psychoactive ingredient found in Hemp. 
+
+Access to these new data sets and what we could learn from them sparked our curiosity. Believing and witnessing first-hand the benefits of hemp and cannabis at a medical level, and with full-support of adult-use legalization, we are setting out to answer a question. Can we use machine learning to predict future sales of cannabis in Oregon based on current data by county and product types over the six years cannabis has been legal in Oregon? << I think the question we want to try to answer has changed based on available data>>
+Will sales of these highly available CBD items catch-up to profits brought in by recreational marijuana dispensaries?
+<<This was the old one I think we should drop>>
