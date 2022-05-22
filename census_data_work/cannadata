@@ -66,9 +66,8 @@ SELECT
 	cannadata.marketshare,
 	cannadata.sales,
 	public."CountyPop".population
--- INTO complete_county_data
+INTO complete_county_data
 FROM cannadata
 LEFT JOIN public."CountyPop"
 ON cannadata.county = public."CountyPop".county
 ORDER BY county;
-
