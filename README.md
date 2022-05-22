@@ -4,3 +4,8 @@ For our final project we chose to study data for the cannabis industry in Oregon
 Access to these new data sets and what we could learn from them sparked our curiosity. Believing and witnessing first-hand the benefits of hemp and cannabis at a medical level, and with full-support of adult-use legalization, we are setting out to answer a question. Can we use machine learning to predict future sales of cannabis in Oregon based on current data by county and product types over the six years cannabis has been legal in Oregon? << I think the question we want to try to answer has changed based on available data>>
 Will sales of these highly available CBD items catch-up to profits brought in by recreational marijuana dispensaries?
 <<This was the old one I think we should drop>>
+
+In order gain valuable information about the cannabis industry in Oregon, we needed access to data sets. The two main data sets we selected were CSVs about both cannabis sales in Oregon by county and product type over the six years cannabis has been legal in Oregon from the Oregon Liquor and Cannabis Commission (OLCC), and a population data set with populations by county in Oregon from the most recent census data. 
+
+The data exploration phase seemed pretty straight forward. One data set has sales information over time by product type and by county. The other data set has population information for each county in Oregon. We looked at each data set and preformed some clean-up in order to drop redundant information. Next we joined data sets using an inner join on the two data sets joining the counties. 
+
