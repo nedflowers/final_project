@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS public."CountyPop"
     "prcntchge" character varying
 );
 
-CREATE TABLE cannadata AS
+CREATE TABLE cannadata
 SELECT "County" AS county,
     "Date" AS date,
 	"ProductType" as product,
