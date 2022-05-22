@@ -1,190 +1,74 @@
 CREATE TABLE IF NOT EXISTS public."CanabisData"
 (
+	"Date" character varying,
     "ProductType" character varying,
     "County" character varying,
-    "MonthName" character varying,
-    "MonthYear" character varying,
-    "SalesDetail" numeric,
-    "CustomerType" character varying,
+    "MarketShareCounty" numeric,
+    "Sales" numeric,
     "Population" numeric
 );
 
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lane', 'October', '10/1/2021', 272385.97, 'Patient', 314389.853585089);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lane', 'October', '10/1/2021', 36976.95, 'Patient', 314389.853585089);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lane', 'October', '10/1/2021', 9582.24, 'Patient', 314389.853585089);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lane', 'October', '10/1/2021', 2972.62, 'Patient', 314389.853585089);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lane', 'October', '10/1/2021', 3381114.51, 'Consumer', 314389.853585089);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lane', 'October', '10/1/2021', 828192.9, 'Consumer', 314389.853585089);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lane', 'October', '10/1/2021', 113225.46, 'Consumer', 314389.853585089);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lane', 'October', '10/1/2021', 16806.82, 'Consumer', 314389.853585089);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Umatilla', 'October', '10/1/2021', 25429.85, 'Patient', 60518.285479304);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Umatilla', 'October', '10/1/2021', 5535.67, 'Patient', 60518.285479304);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Umatilla', 'October', '10/1/2021', 494753.77, 'Consumer', 60518.285479304);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Umatilla', 'October', '10/1/2021', 149560.22, 'Consumer', 60518.285479304);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Umatilla', 'October', '10/1/2021', 152, 'Consumer', 60518.285479304);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Umatilla', 'October', '10/1/2021', 5, 'Consumer', 60518.285479304);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Linn', 'October', '10/1/2021', 68545.1, 'Patient', 101886.440293897);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Linn', 'October', '10/1/2021', 11900.38, 'Patient', 101886.440293897);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Linn', 'October', '10/1/2021', 753456.62, 'Consumer', 101886.440293897);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Linn', 'October', '10/1/2021', 229540.53, 'Consumer', 101886.440293897);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Linn', 'October', '10/1/2021', 38, 'Consumer', 101886.440293897);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Jefferson', 'October', '10/1/2021', 9610.36, 'Patient', 19206.164778080);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Jefferson', 'October', '10/1/2021', 2669.15, 'Patient', 19206.164778080);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Jefferson', 'October', '10/1/2021', 187714.96, 'Consumer', 19206.164778080);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Jefferson', 'October', '10/1/2021', 64056.87, 'Consumer', 19206.164778080);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Hood River', 'October', '10/1/2021', 13546.92, 'Patient', 18380.989204037);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Hood River', 'October', '10/1/2021', 1363.31, 'Patient', 18380.989204037);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Hood River', 'October', '10/1/2021', 348.34, 'Patient', 18380.989204037);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Hood River', 'October', '10/1/2021', 30.85, 'Patient', 18380.989204037);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Hood River', 'October', '10/1/2021', 283216.34, 'Consumer', 18380.989204037);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Hood River', 'October', '10/1/2021', 38785.53, 'Consumer', 18380.989204037);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Hood River', 'October', '10/1/2021', 107, 'Consumer', 18380.989204037);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Hood River', 'October', '10/1/2021', 54, 'Consumer', 18380.989204037);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lake', 'October', '10/1/2021', 1975.91, 'Patient', 6586.210305279);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lake', 'October', '10/1/2021', 978.03, 'Patient', 6586.210305279);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lake', 'October', '10/1/2021', 55152.65, 'Consumer', 6586.210305279);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lake', 'October', '10/1/2021', 14909.54, 'Consumer', 6586.210305279);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Multnomah', 'October', '10/1/2021', 2271176.42, 'Patient', 673472.130574168);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Multnomah', 'October', '10/1/2021', 68508.89, 'Patient', 673472.130574168);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Multnomah', 'October', '10/1/2021', 19866.2, 'Patient', 673472.130574168);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Multnomah', 'October', '10/1/2021', 1189.22, 'Patient', 673472.130574168);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Multnomah', 'October', '10/1/2021', 10117577.97, 'Consumer', 673472.130574168);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Multnomah', 'October', '10/1/2021', 2116841.37, 'Consumer', 673472.130574168);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Multnomah', 'October', '10/1/2021', 198070.49, 'Consumer', 673472.130574168);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Multnomah', 'October', '10/1/2021', 35116.37, 'Consumer', 673472.130574168);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Josephine', 'October', '10/1/2021', 54294.36, 'Patient', 72684.273038892);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Josephine', 'October', '10/1/2021', 17851.91, 'Patient', 72684.273038892);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Josephine', 'October', '10/1/2021', 484333.55, 'Consumer', 72684.273038892);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Josephine', 'October', '10/1/2021', 167246.18, 'Consumer', 72684.273038892);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Josephine', 'October', '10/1/2021', 100.8, 'Consumer', 72684.273038892);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Jackson', 'October', '10/1/2021', 185005.29, 'Patient', 178848.98673442);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Jackson', 'October', '10/1/2021', 25419.66, 'Patient', 178848.98673442);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Jackson', 'October', '10/1/2021', 1442162.96, 'Consumer', 178848.98673442);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Jackson', 'October', '10/1/2021', 437646.19, 'Consumer', 178848.98673442);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Jackson', 'October', '10/1/2021', 702.88, 'Consumer', 178848.98673442);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Jackson', 'October', '10/1/2021', 77.16, 'Consumer', 178848.98673442);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Harney', 'October', '10/1/2021', 1214.41, 'Patient', 5947.248992771);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Harney', 'October', '10/1/2021', 1098.16, 'Patient', 5947.248992771);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Harney', 'October', '10/1/2021', 54107.83, 'Consumer', 5947.248992771);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Harney', 'October', '10/1/2021', 21677.3, 'Consumer', 5947.248992771);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Malheur', 'October', '10/1/2021', 25031.82, 'Patient', 24371.769850696);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Malheur', 'October', '10/1/2021', 5826.78, 'Patient', 24371.769850696);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Malheur', 'October', '10/1/2021', 4058721.3, 'Consumer', 24371.769850696);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Malheur', 'October', '10/1/2021', 569266.82, 'Consumer', 24371.769850696);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Malheur', 'October', '10/1/2021', 1158.35, 'Consumer', 24371.769850696);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Malheur', 'October', '10/1/2021', 178.57, 'Consumer', 24371.769850696);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Tillamook', 'October', '10/1/2021', 23487.34, 'Patient', 22681.361417885);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Tillamook', 'October', '10/1/2021', 3530.46, 'Patient', 22681.361417885);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Tillamook', 'October', '10/1/2021', 268178.6, 'Consumer', 22681.361417885);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Tillamook', 'October', '10/1/2021', 80416.14, 'Consumer', 22681.361417885);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Klamath', 'October', '10/1/2021', 19251.82, 'Patient', 54817.386044972);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Klamath', 'October', '10/1/2021', 5964.66, 'Patient', 54817.386044972);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Klamath', 'October', '10/1/2021', 410038.84, 'Consumer', 54817.386044972);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Klamath', 'October', '10/1/2021', 150923.01, 'Consumer', 54817.386044972);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Grant', 'October', '10/1/2021', 5292.54, 'Patient', 5959.321258760);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Grant', 'October', '10/1/2021', 297.19, 'Patient', 5959.321258760);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Grant', 'October', '10/1/2021', 46649.42, 'Consumer', 5959.321258760);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Grant', 'October', '10/1/2021', 4299.64, 'Consumer', 5959.321258760);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Baker', 'October', '10/1/2021', 5452.88, 'Patient', 13564.518932414);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Baker', 'October', '10/1/2021', 703.83, 'Patient', 13564.518932414);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Baker', 'October', '10/1/2021', 159265.97, 'Consumer', 13564.518932414);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Baker', 'October', '10/1/2021', 29192.21, 'Consumer', 13564.518932414);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Yamhill', 'October', '10/1/2021', 39033.69, 'Patient', 85352.255379184);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Yamhill', 'October', '10/1/2021', 4815.97, 'Patient', 85352.255379184);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Yamhill', 'October', '10/1/2021', 402.75, 'Patient', 85352.255379184);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Yamhill', 'October', '10/1/2021', 596241.55, 'Consumer', 85352.255379184);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Yamhill', 'October', '10/1/2021', 176921.72, 'Consumer', 85352.255379184);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Yamhill', 'October', '10/1/2021', 271, 'Consumer', 85352.255379184);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Yamhill', 'October', '10/1/2021', 8, 'Consumer', 85352.255379184);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Washington', 'October', '10/1/2021', 169737.13, 'Patient', 473117.842487369);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Washington', 'October', '10/1/2021', 34509.37, 'Patient', 473117.842487369);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Washington', 'October', '10/1/2021', 3274266.34, 'Consumer', 473117.842487369);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Washington', 'October', '10/1/2021', 944357.67, 'Consumer', 473117.842487369);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Washington', 'October', '10/1/2021', 2547.84, 'Consumer', 473117.842487369);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Washington', 'October', '10/1/2021', 802.99, 'Consumer', 473117.842487369);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Polk', 'October', '10/1/2021', 15743.27, 'Patient', 68823.210994567);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Polk', 'October', '10/1/2021', 4027.13, 'Patient', 68823.210994567);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Polk', 'October', '10/1/2021', 267692.83, 'Consumer', 68823.210994567);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Polk', 'October', '10/1/2021', 113293.06, 'Consumer', 68823.210994567);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Clatsop', 'October', '10/1/2021', 29144.79, 'Patient', 33609.473859206);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Clatsop', 'October', '10/1/2021', 6710.89, 'Patient', 33609.473859206);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Clatsop', 'October', '10/1/2021', 466628.91, 'Consumer', 33609.473859206);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Clatsop', 'October', '10/1/2021', 156087.09, 'Consumer', 33609.473859206);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Coos', 'October', '10/1/2021', 36109.15, 'Patient', 53361.919703369);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Coos', 'October', '10/1/2021', 9718.87, 'Patient', 53361.919703369);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Coos', 'October', '10/1/2021', 100.81, 'Patient', 53361.919703369);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Coos', 'October', '10/1/2021', 614351.7, 'Consumer', 53361.919703369);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Coos', 'October', '10/1/2021', 167952.62, 'Consumer', 53361.919703369);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Coos', 'October', '10/1/2021', 107, 'Consumer', 53361.919703369);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Wallowa', 'October', '10/1/2021', 4741.04, 'Patient', 6026.948885972);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Wallowa', 'October', '10/1/2021', 281.21, 'Patient', 6026.948885972);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Wallowa', 'October', '10/1/2021', 46447.22, 'Consumer', 6026.948885972);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Wallowa', 'October', '10/1/2021', 2051.11, 'Consumer', 6026.948885972);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Deschutes', 'October', '10/1/2021', 148107.95, 'Patient', 162165.845047794);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Deschutes', 'October', '10/1/2021', 22471.62, 'Patient', 162165.845047794);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Deschutes', 'October', '10/1/2021', 1025.9, 'Patient', 162165.845047794);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Deschutes', 'October', '10/1/2021', 65.51, 'Patient', 162165.845047794);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Deschutes', 'October', '10/1/2021', 1745647.25, 'Consumer', 162165.845047794);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Deschutes', 'October', '10/1/2021', 460912.91, 'Consumer', 162165.845047794);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Deschutes', 'October', '10/1/2021', 10552.62, 'Consumer', 162165.845047794);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Deschutes', 'October', '10/1/2021', 1179.08, 'Consumer', 162165.845047794);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lincoln', 'October', '10/1/2021', 122137.61, 'Patient', 42868.501051058);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lincoln', 'October', '10/1/2021', 20671.24, 'Patient', 42868.501051058);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lincoln', 'October', '10/1/2021', 687052.59, 'Consumer', 42868.501051058);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Lincoln', 'October', '10/1/2021', 189216.56, 'Consumer', 42868.501051058);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Clackamas', 'October', '10/1/2021', 154044.73, 'Patient', 334421.107338214);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Clackamas', 'October', '10/1/2021', 20662.67, 'Patient', 334421.107338214);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Clackamas', 'October', '10/1/2021', 164.8, 'Patient', 334421.107338214);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Clackamas', 'October', '10/1/2021', 45, 'Patient', 334421.107338214);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Clackamas', 'October', '10/1/2021', 1934495.04, 'Consumer', 334421.107338214);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Clackamas', 'October', '10/1/2021', 463832.65, 'Consumer', 334421.107338214);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Clackamas', 'October', '10/1/2021', 3195.76, 'Consumer', 334421.107338214);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Clackamas', 'October', '10/1/2021', 115.88, 'Consumer', 334421.107338214);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Wasco', 'October', '10/1/2021', 5955.93, 'Patient', 20946.148431231);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Wasco', 'October', '10/1/2021', 903.04, 'Patient', 20946.148431231);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Wasco', 'October', '10/1/2021', 202535.08, 'Consumer', 20946.148431231);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Wasco', 'October', '10/1/2021', 55508.99, 'Consumer', 20946.148431231);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Marion', 'October', '10/1/2021', 240234.83, 'Patient', 264470.997171451);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Marion', 'October', '10/1/2021', 27614.35, 'Patient', 264470.997171451);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Marion', 'October', '10/1/2021', 5893.21, 'Patient', 264470.997171451);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Marion', 'October', '10/1/2021', 733.05, 'Patient', 264470.997171451);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Marion', 'October', '10/1/2021', 2190751.15, 'Consumer', 264470.997171451);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Marion', 'October', '10/1/2021', 646886.67, 'Consumer', 264470.997171451);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Marion', 'October', '10/1/2021', 63554.3, 'Consumer', 264470.997171451);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Marion', 'October', '10/1/2021', 12793.72, 'Consumer', 264470.997171451);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Douglas', 'October', '10/1/2021', 37910.75, 'Patient', 90414.423523086);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Douglas', 'October', '10/1/2021', 11123.34, 'Patient', 90414.423523086);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Douglas', 'October', '10/1/2021', 679049.59, 'Consumer', 90414.423523086);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Douglas', 'October', '10/1/2021', 205823.23, 'Consumer', 90414.423523086);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Douglas', 'October', '10/1/2021', 555.81, 'Consumer', 90414.423523086);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Douglas', 'October', '10/1/2021', 10.04, 'Consumer', 90414.423523086);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Curry', 'October', '10/1/2021', 20241.17, 'Patient', 20368.093912774);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Curry', 'October', '10/1/2021', 2882.96, 'Patient', 20368.093912774);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Curry', 'October', '10/1/2021', 378665.16, 'Consumer', 20368.093912774);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Curry', 'October', '10/1/2021', 97517.08, 'Consumer', 20368.093912774);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Benton', 'October', '10/1/2021', 35719.02, 'Patient', 79216.119053931);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Benton', 'October', '10/1/2021', 4044.75, 'Patient', 79216.119053931);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Benton', 'October', '10/1/2021', 186.74, 'Patient', 79216.119053931);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Benton', 'October', '10/1/2021', 532074.95, 'Consumer', 79216.119053931);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Benton', 'October', '10/1/2021', 138316.94, 'Consumer', 79216.119053931);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Benton', 'October', '10/1/2021', 3488.83, 'Consumer', 79216.119053931);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Benton', 'October', '10/1/2021', 619.46, 'Consumer', 79216.119053931);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Columbia', 'October', '10/1/2021', 13940.65, 'Patient', 42386.438142449);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Columbia', 'October', '10/1/2021', 3255.19, 'Patient', 42386.438142449);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Columbia', 'October', '10/1/2021', 321655.42, 'Consumer', 42386.438142449);
-INSERT INTO public."CanabisData" ("ProductType", "County", "MonthName", "MonthYear", "SalesDetail", "CustomerType", "Population") VALUES ('Usable MJ', 'Columbia', 'October', '10/1/2021', 104561.99, 'Consumer', 42386.438142449);
+CREATE TABLE IF NOT EXISTS public."CountyPop"
+(
+	"county" character varying,
+    "revpop2020" character varying,
+    "certpop2020" character varying,
+    "popchge" character varying,
+    "prcntchge" character varying
+);
+
+CREATE TABLE cannadata AS
+SELECT "County" AS county,
+    "Date" AS date,
+	"ProductType" as product,
+	MAX("MarketShareCounty") as marketshare,
+    MAX("Sales") AS sales
+FROM public."CanabisData"
+GROUP BY "County", "Date", "ProductType"
+ORDER BY "County", "Date", "ProductType";
+
+DROP TABLE public."CanabisData";
+DROP TABLE public."CountyPop";
+DROP TABLE cannadata;
+DROP TABLE complete_county_data;
 
 
 SELECT * FROM public."CanabisData";
 
-CREATE TABLE cannadata AS
-SELECT "County" AS county,
-    MAX("MonthName") AS monthname,
-    MAX("MonthYear") AS monthyear,
-    MAX("SalesDetail") AS salesdetail,
-	MAX("Population") AS population
-FROM public."CanabisData"
-GROUP BY "County"
-ORDER BY "County";
+SELECT * FROM public."CountyPop";
 
 SELECT * FROM cannadata;
+
+SELECT * FROM complete_county_data;
+
+UPDATE public."CountyPop"
+SET certpop2020 = replace(certpop2020, ',', '');
+
+UPDATE public."CountyPop"
+SET county = replace(county, ' ', '') ;
+
+UPDATE cannadata
+SET county = replace(county, ' ', '')
+;
+
+ALTER TABLE public."CountyPop"
+	RENAME COLUMN certpop2020 to population;
+	
+ALTER TABLE public."CountyPop"
+	DROP COLUMN revpop2020, 
+	DROP COLUMN popchge, 
+	DROP COLUMN prcntchge;
+
+SELECT
+	cannadata.county,
+	cannadata.date,
+	cannadata.product,
+	cannadata.marketshare,
+	cannadata.sales,
+	public."CountyPop".population
+-- INTO complete_county_data
+FROM cannadata
+LEFT JOIN public."CountyPop"
+ON cannadata.county = public."CountyPop".county
+ORDER BY county;
+
