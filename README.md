@@ -20,11 +20,26 @@ https://data.olcc.state.or.us/t/OLCCPublic/views/MarketDataTableau/MainScreen
 
 https://www.pdx.edu/population-research/census-data-oregon
 
+
+## Tools 
+
 ### Quick DBD
 https://app.quickdatabasediagrams.com/#/
 
 ### Tableau
 https://www.tableau.com/
+
+### Jupyter Notebook
+
+### PgAdmin4
+
+### AWS
+
+### Google Colab
+
+### Google Slides
+
+### Git
 
 
 ### Communication Protocols
