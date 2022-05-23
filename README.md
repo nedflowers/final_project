@@ -1,9 +1,8 @@
 # Oregon Cannabis and Hemp Market Trends
 
 ## Overview
-Hemp and Cannabis are being studied like never before. With 18 states passing laws decriminalizing and allowing state-licensed sales of cannabis, it’s becoming less of a taboo, and making its way into mainstream. You can find CBD infused products at gas stations, grocery stores, corner stores and even large nation-wide retailers. This sparked our curiosity. Believing and witnessing first-hand the benefits of hemp and cannabis at a medical level, and with full-support of adult-use legalization, we are setting out to answer a question. Will sales of these highly available CBD items catch-up to profits brought in by recreational marijuana dispensaries?
-
-With the help of neural networks and machine learning, use the State of Oregon’s Marijuana Market Open Database to track and compare sales of THC vs CBD items. Determine if Oregon’s sales of CBD items will eventually meet the sales and profitability of recreational marijuana products. If that’s a possibility, how much time will it take
+For our final project we chose to study data for the cannabis industry in Oregon. We chose this new and emerging market because Hemp and Cannabis are being studied like never before, and because of its increased legality we now have access to cannabis data sets that didn't exist 10 years ago. With 18 states passing laws decriminalizing and allowing state-licensed sales of cannabis, it’s becoming less of a taboo, and making its way into mainstream. You can even find CBD infused products at gas stations, grocery stores, corner stores and even large nation-wide retailers, while THC-derived products remain hughly cotrolled. 
+Possibilities of ever-emerging datatsets and patterns inspired us to dig into this data. Believing and witnessing first-hand the benefits of hemp and cannabis at a medical level, and with full-support of adult-use legalization, we are setting out to answer a question. Can we use machine learning to predict future sales of cannabis in Oregon based on current data by county and product types over the six years cannabis has been legal in Oregon? 
 
 ## Sources
 
@@ -12,8 +11,12 @@ https://www.oregon.gov/olcc/marijuana/Pages/Marijuana-Market-Data.aspx
 
 https://data.olcc.state.or.us/t/OLCCPublic/views/MarketDataTableau/MainScreen
 
-### Headset Industry Reports
-https://www.headset.io/industry-reports
+https://www.pdx.edu/population-research/census-data-oregon
+
+https://app.quickdatabasediagrams.com/#/
+
+https://www.tableau.com/
+
 
 ### Communication Protocols
 -	Check Slack daily, be aware of any conversation in the group chat.
