@@ -50,7 +50,7 @@ https://www.tableau.com/
 -	Team Lead will transcribe notes at each meeting on Google Docs, accessible to all team members.
 
 ### Database 
-https://github.com/nedflowers/final_project/blob/main/first_segment/PostGreCreateTableSQL.md
+https://github.com/nedflowers/final_project/tree/main/second_segment/DB
 
 ### Model 
 
