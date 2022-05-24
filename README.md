@@ -16,7 +16,7 @@ https://www.oregon.gov/olcc/marijuana/Pages/Marijuana-Market-Data.aspx
 
 https://data.olcc.state.or.us/t/OLCCPublic/views/MarketDataTableau/MainScreen
 
-### Portland State University - Census Data for Oregob
+### Portland State University - Census Data for Oregon
 
 https://www.pdx.edu/population-research/census-data-oregon
 
