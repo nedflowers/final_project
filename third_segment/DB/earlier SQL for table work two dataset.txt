@@ -1,0 +1,73 @@
+CREATE TABLE IF NOT EXISTS public."CanabisData"
+(
+	"Date" character varying,
+    "ProductType" character varying,
+    "County" character varying,
+    "MarketShareCounty" numeric,
+    "Sales" numeric,
+    "Population" numeric
+);
+
+CREATE TABLE IF NOT EXISTS public."CountyPop"
+(
+	"county" character varying,
+    "revpop2020" character varying,
+    "certpop2020" character varying,
+    "popchge" character varying,
+    "prcntchge" character varying
+);
+
+CREATE TABLE cannadata AS
+SELECT "County" AS county,
+    "Date" AS date,
+	"ProductType" as product,
+	MAX("MarketShareCounty") as marketshare,
+    MAX("Sales") AS sales
+FROM public."CanabisData"
+GROUP BY "County", "Date", "ProductType"
+ORDER BY "County", "Date", "ProductType";
+
+DROP TABLE public."CanabisData";
+DROP TABLE public."CountyPop";
+DROP TABLE cannadata;
+DROP TABLE complete_county_data;
+
+
+SELECT * FROM public."CanabisData";
+
+SELECT * FROM public."CountyPop";
+
+SELECT * FROM cannadata;
+
+SELECT * FROM complete_county_data;
+
+UPDATE public."CountyPop"
+SET certpop2020 = replace(certpop2020, ',', '');
+
+UPDATE public."CountyPop"
+SET county = replace(county, ' ', '') ;
+
+UPDATE cannadata
+SET county = replace(county, ' ', '')
+;
+
+ALTER TABLE public."CountyPop"
+	RENAME COLUMN certpop2020 to population;
+	
+ALTER TABLE public."CountyPop"
+	DROP COLUMN revpop2020, 
+	DROP COLUMN popchge, 
+	DROP COLUMN prcntchge;
+
+SELECT
+	cannadata.county,
+	cannadata.date,
+	cannadata.product,
+	cannadata.marketshare,
+	cannadata.sales,
+	public."CountyPop".population
+INTO complete_county_data
+FROM cannadata
+LEFT JOIN public."CountyPop"
+ON cannadata.county = public."CountyPop".county
+ORDER BY county;
