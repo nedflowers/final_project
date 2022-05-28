@@ -5,16 +5,16 @@ For our final project we chose to study data for the cannabis industry in Oregon
 
 Possibilities of ever-emerging datatsets and patterns inspired us to dig into this data. Believing and witnessing first-hand the benefits of hemp and cannabis at a medical level, and with full-support of adult-use legalization, we are setting out to answer a question. Can we use machine learning to predict future sales of cannabis in Oregon based on current data by county and product types over the six years cannabis has been legal in Oregon?
 
-In order gain valuable information about the cannabis industry in Oregon, we needed access to data sets. The two main data sets we selected were CSVs about both cannabis sales in Oregon by county and product type over the six years cannabis has been legal in Oregon from the Oregon Liquor and Cannabis Commission (OLCC), and a population data set with populations by county in Oregon from the most recent census data.
+In order gain valuable information about the cannabis industry in Oregon, we needed access to data sets. The two main data sets we selected were CSVs about both cannabis sales in Oregon(by County, Product, and Month x 6yrs) from the Oregon Liquor and Cannabis Commission (OLCC), and a population data set with populations by county in Oregon from the most recent census data.
 
-The data exploration phase seemed pretty straight forward. One data set has sales information over time by product type and by county. The other data set has population information for each county in Oregon. We looked at each data set and preformed some clean-up in order to drop redundant information. Next, we joined data sets using an inner join on the two data sets joining the counties.
+The data exploration phase seemed pretty straight forward. One data set has sales information over time by product type and by county. The other data set has population information for each county in Oregon. We looked at each data set and performed some clean-up in order to drop redundant information. We joined data the sets using a LEFT join on the two data sets joining by County, favoring the Sales data over the Population.
 
-Once we had the combined data sets in one data frame, we started the data analysis. The analysis consisted of taking all of the data and condensing it down to only what we needed. We dropped columns that contained market share by county and other superfluous information. Because we were interested in predicting future sales based on previous sales by county and product type over time, we thought linear regression would be the best model for machine learning. We used the sales column as the target and rest of the columns as the features. The features columns included: County, Product Type, Date, and County Population.
+Once we had the combined data sets in one data frame, we started the data analysis. The analysis consisted of taking all of the data and condensing it down to only what we needed. We dropped columns that contained market share by county and other superfluous information. Because we were interested in predicting future sales based on previous sales by county and product type over time, we thought linear regression would be the best model for machine learning. We used the Sales column as the target and rest of the columns as the features. The features columns included: County, Product Type, Date, and County Population.
 ## Sources
 
 ### Oregon Marijuana Market Data
-https://www.oregon.gov/olcc/marijuana/Pages/Marijuana-Market-Data.aspx
-
+<!-- https://www.oregon.gov/olcc/marijuana/Pages/Marijuana-Market-Data.aspx
+ -->
 https://data.olcc.state.or.us/t/OLCCPublic/views/MarketDataTableau/MainScreen
 
 ### Portland State University - Census Data for Oregon
@@ -35,6 +35,8 @@ https://www.tableau.com/
 ### PgAdmin4
 
 ### AWS
+https://s3.console.aws.amazon.com/s3/buckets/myosus32022buk?region=us-west-2
+![AWSview](/imgs/AWS-Bucket.png)
 
 ### Google Colab
 
@@ -64,3 +66,51 @@ https://github.com/nedflowers/final_project/tree/main/second_segment/DB
 https://github.com/nedflowers/final_project/blob/main/first_segment/ML_Mockup.ipynb
 
 ## Summary
+
+<!-- no done but will add this in  
+DataInteraction and Program Implmentation:
+Python + Spark + SQLAlchemy
+final_project/third_segment/DB/AWScsvToDBwSQLmerge.ipynb
+
+We use Spark for importing the AWS-CSV to the Postgres DB,
+and we use SQLAlchemy for working with the SQL Tables(through the use of conn.execute), specifically joining the two dataset on county,
+and some data cleaning and trimming.
+After the data preparations are complete what is available is a dataset we can do ML on.
+9,514 rows and 7 columns
+ID			int
+county		obj/text
+population		int
+salesmonth		float/int
+salesyear		float/int
+product		obj/text
+marketshare	float/int
+sales			float/int
+
+Results of Analysis with Machine Learning 
+-------------------------------------------------------------------
+
+A ML Model is created with Linear Regression.
+We chose Linear Regression for our model because we have sales data that is increasing over time, so of our available choices, it seems to be the one that will fit our data.
+One downside is it may be very simple.
+-------------------------------------------------------------------
+Our results so far render
+			Predicted		Observed		Residual		Abs. Error
+0			-1.035797e+05	849			-1.044287e+05	1.044287e+05
+1			-1.680917e+05	13012			-1.811037e+05	1.811037e+05
+2			4.534763e+05	10			4.534663e+05	4.534663e+05
+3			3.419492e+06	1818879		1.600613e+06	1.600613e+06
+4			7.504363e+05	68059			6.823773e+05	6.823773e+05
+...			...			...			...	...
+7130			-3.575317e+05	7556			-3.650877e+05	3.650877e+05
+7131			-4.317717e+05	22591			-4.543627e+05	4.543627e+05
+7132			-1.624597e+05	43260			-2.057197e+05	2.057197e+05
+7133			1.125476e+06	679291		4.461853e+05	4.461853e+05
+7134			1.913956e+06	3190012		-1.276056e+06	1.276056e+06
+
+These results do not seem indicate our model is working properly.
+
+After conuslting with both Teachers(Niño Yosinao), and a TA(Shan Jiang), we were made aware that using a Bin for the Sales amount, and using a Random Forest Classifier would be the next Method to use in trying to get our Machine Learning Accuracy working to expectations. As our project is right now we have a Linear Regression Model, and it creates co-efficients, but they are not in line with our expectations. Anouther benift of using a Random Forest Classifier would be it would allow us to create a confusion matrix, right now I dont believe we have results that would facilitate creating one.  It is apparent, we as a team would have benifited from discussing our ML issues with a teaching staff person sooner.
+
+
+
+ -->
