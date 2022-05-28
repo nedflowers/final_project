@@ -48,14 +48,6 @@ https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/DASH
 
 ### Git
 
-
-### Communication Protocols
--	Check Slack daily, be aware of any conversation in the group chat.
-
--	Discord or Zoom voice meetings once a week, minimum, outside of class.
-
--	Team Lead will transcribe notes at each meeting on Google Docs, accessible to all team members.
-
 ### Database 
 https://github.com/nedflowers/final_project/tree/main/second_segment/DB
 
