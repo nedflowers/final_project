@@ -34,18 +34,21 @@ Used for developing python code.
 A Database Studio that we used to connect to AWS and confirm proper table setup, and develop SQL queries.
 
 ## AWS
-https://s3.console.aws.amazon.com/s3/buckets/myosus32022buk?region=us-west-2
+A Cloud based service that we use to store our CSV files and Postgres Database.
+<!-- 
+https://s3.console.aws.amazon.com/s3/buckets/myosus32022buk?region=us-west-2 -->
+
 ![AWSview](/imgs/AWS-Bucket.png)
 
-https://myosus32022buk.s3.amazonaws.com/County%20Product%20Trend_Full%20Data_data.csv
+https://myosus32022buk.s3.amazonaws.com/County%20Product%20Trend_Full%20Data_data.csv  : Sales Data
 
-https://myosus32022buk.s3.amazonaws.com/census_estimates.csv
+https://myosus32022buk.s3.amazonaws.com/census_estimates.csv  : Population Data
 
 
 ## Google Colab
 A Convienent place to store and run Python/Jupyter Notebook Code
 <!-- https://colab.research.google.com/drive/10GP8dXiVwqJu2Y1AZJfR4IOSOO9fgVPP   AWScsvToDBwSQLmerge.ipynb -->
-<!-- https://colab.research.google.com/drive/1SoEdLRvutqdlRRBVBOYx1OXHd_psNM_j    -->
+<!-- https://colab.research.google.com/drive/1SoEdLRvutqdlRRBVBOYx1OXHd_psNM_j   AWSMachineLearningv2done.ipynb -->
 
 ## Google Slides
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -61,15 +64,16 @@ https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/DASH
 Postgres is a Relational Database we use to store our data in tables. Some data preprocessing occurs here, including merging our two datasets into one
 ![ShowingDatasourcesAndMerge](/imgs/DatasetSelectionMergePresentationHalfSize.png)
 
-An early(but working) version of the SQL we use to do this is shown in this text file (We have since moved the SQL code into SQL-Alcehmy/Python file below)
+An early(but working) version of the SQL we use to do this is shown in this text file
+
+(We have since moved the SQL code into SQL-Alcehmy/Python file below)
+
 https://github.com/nedflowers/final_project/main/forth_segment_final/cannadata.sql.txt
 
 <!-- https://github.com/nedflowers/final_project/tree/main/second_segment/DB -->
 
 ## Data Processing 
-### Python
-### Spark
-### SQLAlchemy
+### Python and Spark and SQLAlchemy
 https://github.com/nedflowers/final_project/blob/BE_final_project/forth_segment_final/AWScsvToDBwSQLmerge.ipynb
 
 We use Spark for importing the AWS-CSV to the Postgres DB,
@@ -78,14 +82,17 @@ and some data cleaning and trimming(The SQL codes are very similar if not identi
 After the data preparations are complete what is available is a dataset we can do ML on.
 
 9,514 rows and 7 columns (This is the DatasetSelectionMergePresentationHalfSize.png image shown above)
-ID		int
-county		obj/text
-population	int
-salesmonth	float/int
-salesyear	float/int
-product		obj/text
-marketshare	float/int
-sales		float/int
+
+<table>
+	<tr><td>ID</td><td>int</td></tr>
+	<tr><td>county</td><td>obj/text</td></tr>
+	<tr><td>population</td><td>int</td></tr>
+	<tr><td>salesmonth</td><td>float/int</td></tr>
+	<tr><td>salesyear</td><td>float/int</td></tr>
+	<tr><td>product</td><td>obj/text</td></tr>
+	<tr><td>marketshare</td><td>float/int</td></tr>
+	<tr><td>sales</td><td>float/int</td></tr>
+</table>
 
 ## Model 
 This is complex enough it is broken down in a linked ReadMe
