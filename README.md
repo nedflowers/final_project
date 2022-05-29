@@ -13,15 +13,13 @@ Once we had the combined data sets in one data frame, we started the data analys
 ## Sources
 
 ### Oregon Marijuana Market Data
-<!-- https://www.oregon.gov/olcc/marijuana/Pages/Marijuana-Market-Data.aspx
- -->
-https://data.olcc.state.or.us/t/OLCCPublic/views/MarketDataTableau/MainScreen
+ https://www.oregon.gov/olcc/marijuana/Pages/Marijuana-Market-Data.aspx
 
 ### Portland State University - Census Data for Oregon
 
 https://www.pdx.edu/population-research/census-data-oregon
 
-<!-- ## Tools  -->
+## Tools
 
 ### Quick DBD
 https://app.quickdatabasediagrams.com/#/
@@ -37,7 +35,7 @@ A Database Studio that we used to connect to AWS and confirm proper table setup,
 
 ### AWS
 https://s3.console.aws.amazon.com/s3/buckets/myosus32022buk?region=us-west-2
-<!-- ![AWSview](/imgs/AWS-Bucket.png) -->
+![AWSview](/imgs/AWS-Bucket.png)
 https://myosus32022buk.s3.amazonaws.com/County%20Product%20Trend_Full%20Data_data.csv
 https://myosus32022buk.s3.amazonaws.com/census_estimates.csv
 
@@ -60,7 +58,7 @@ This media aka https://github.com
 ### Database 
 Postgres is a Relational Database we use to store our data in tables.
 
-<!-- https://github.com/nedflowers/final_project/tree/main/second_segment/DB -->
+https://github.com/nedflowers/final_project/tree/main/second_segment/DB
 
 ### Model 
 https://github.com/nedflowers/final_project/main/forth_segment_final/MachineLearningModel.md
