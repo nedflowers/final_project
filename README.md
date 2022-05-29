@@ -60,6 +60,8 @@ https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/DASH
 ## Database 
 Postgres is a Relational Database we use to store our data in tables. Some data preprocessing occurs here, including merging our two datasets into one
 ![ShowingDatasourcesAndMerge](/imgs/DatasetSelectionMergePresentationHalfSize.png)
+
+An early(but working) version of the SQL we use to do this is shown in this text file (We have since moved the SQL code into SQL-Alcehmy/Python file below)
 https://github.com/nedflowers/final_project/main/forth_segment_final/cannadata.sql.txt
 
 <!-- https://github.com/nedflowers/final_project/tree/main/second_segment/DB -->
@@ -72,9 +74,10 @@ https://github.com/nedflowers/final_project/blob/BE_final_project/forth_segment_
 
 We use Spark for importing the AWS-CSV to the Postgres DB,
 and we use SQLAlchemy for working with the SQL Tables(through the use of conn.execute), specifically joining the two dataset on county,
-and some data cleaning and trimming.
+and some data cleaning and trimming(The SQL codes are very similar if not identical to the SQL/text file above, and are shown in comments).
 After the data preparations are complete what is available is a dataset we can do ML on.
-9,514 rows and 7 columns
+
+9,514 rows and 7 columns (This is the DatasetSelectionMergePresentationHalfSize.png image shown above)
 ID		int
 county		obj/text
 population	int
@@ -84,8 +87,10 @@ product		obj/text
 marketshare	float/int
 sales		float/int
 
-### Model 
+## Model 
+This is complex enough it is broken down in a linked ReadMe
 https://github.com/nedflowers/final_project/main/forth_segment_final/MachineLearningModel.md
+Here is the code
 https://github.com/nedflowers/final_project/main/forth_segment_final/AWSMachineLearningv2done.ipynb
 
 ## Summary
@@ -110,8 +115,8 @@ These results seem to indicate our model is not working properly.
 After conuslting with both Teachers(Niño Yosinao), and a TA(Shan Jiang), we were made aware that using a Bin for the Sales amount, and using a Random Forest Classifier would be the next Method to use in trying to get our Machine Learning Accuracy working to expectations. As our project is right now we have a Linear Regression Model, and it creates co-efficients, but they are not in line with our expectations. Anouther benift of using a Random Forest Classifier would be it would allow us to create a confusion matrix, right now I dont believe we have results that would facilitate creating one.  
 
 
-<!-- no done but will add this in  
 
 
 
- -->
+
+
