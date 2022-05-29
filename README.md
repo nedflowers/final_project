@@ -52,8 +52,6 @@ https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/PREZ
 #### Dashboard Storyboarding
 https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/DASH/DashStory.pdf
 
-### Git
-This media aka https://github.com
 
 ### Database 
 Postgres is a Relational Database we use to store our data in tables.
