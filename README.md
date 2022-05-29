@@ -19,47 +19,74 @@ Once we had the combined data sets in one data frame, we started the data analys
 
 https://www.pdx.edu/population-research/census-data-oregon
 
-## Tools
+# Tools
 
-### Quick DBD
+<!-- ## Quick DBD
 https://app.quickdatabasediagrams.com/#/
-
-### Tableau
+ -->
+## Tableau
 https://www.tableau.com/
 
-### Jupyter Notebook
+## Jupyter Notebook
 Used for developing python code.
 
-### PgAdmin4
+## PgAdmin4
 A Database Studio that we used to connect to AWS and confirm proper table setup, and develop SQL queries.
 
-### AWS
+## AWS
 https://s3.console.aws.amazon.com/s3/buckets/myosus32022buk?region=us-west-2
 ![AWSview](/imgs/AWS-Bucket.png)
+
 https://myosus32022buk.s3.amazonaws.com/County%20Product%20Trend_Full%20Data_data.csv
+
 https://myosus32022buk.s3.amazonaws.com/census_estimates.csv
 
 
-### Google Colab
+## Google Colab
 A Convienent place to store and run Python/Jupyter Notebook Code
+<!-- https://colab.research.google.com/drive/10GP8dXiVwqJu2Y1AZJfR4IOSOO9fgVPP   AWScsvToDBwSQLmerge.ipynb -->
+<!-- https://colab.research.google.com/drive/1SoEdLRvutqdlRRBVBOYx1OXHd_psNM_j    -->
 
-### Google Slides
+## Google Slides
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-#### Presentation
+## Presentation
 https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/PREZ/Copy%20of%20CannaPres.pdf
 
-#### Dashboard Storyboarding
+## Dashboard Storyboarding
 https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/DASH/DashStory.pdf
 
 
-### Database 
-Postgres is a Relational Database we use to store our data in tables.
+## Database 
+Postgres is a Relational Database we use to store our data in tables. Some data preprocessing occurs here, including merging our two datasets into one
+![ShowingDatasourcesAndMerge](/imgs/DatasetSelectionMergePresentationHalfSize.png)
+https://github.com/nedflowers/final_project/main/forth_segment_final/cannadata.sql.txt
 
-https://github.com/nedflowers/final_project/tree/main/second_segment/DB
+<!-- https://github.com/nedflowers/final_project/tree/main/second_segment/DB -->
+
+## Data Processing 
+### Python
+### Spark
+### SQLAlchemy
+https://github.com/nedflowers/final_project/blob/BE_final_project/forth_segment_final/AWScsvToDBwSQLmerge.ipynb
+
+We use Spark for importing the AWS-CSV to the Postgres DB,
+and we use SQLAlchemy for working with the SQL Tables(through the use of conn.execute), specifically joining the two dataset on county,
+and some data cleaning and trimming.
+After the data preparations are complete what is available is a dataset we can do ML on.
+9,514 rows and 7 columns
+ID		int
+county		obj/text
+population	int
+salesmonth	float/int
+salesyear	float/int
+product		obj/text
+marketshare	float/int
+sales		float/int
 
 ### Model 
 https://github.com/nedflowers/final_project/main/forth_segment_final/MachineLearningModel.md
+https://github.com/nedflowers/final_project/main/forth_segment_final/AWSMachineLearningv2done.ipynb
 
 ## Summary
 Our results using Linear Regression render
@@ -84,23 +111,6 @@ After conuslting with both Teachers(Niño Yosinao), and a TA(Shan Jiang), we wer
 
 
 <!-- no done but will add this in  
-DataInteraction and Program Implmentation:
-Python + Spark + SQLAlchemy
-final_project/third_segment/DB/AWScsvToDBwSQLmerge.ipynb
-
-We use Spark for importing the AWS-CSV to the Postgres DB,
-and we use SQLAlchemy for working with the SQL Tables(through the use of conn.execute), specifically joining the two dataset on county,
-and some data cleaning and trimming.
-After the data preparations are complete what is available is a dataset we can do ML on.
-9,514 rows and 7 columns
-ID		int
-county		obj/text
-population	int
-salesmonth	float/int
-salesyear	float/int
-product		obj/text
-marketshare	float/int
-sales		float/int
 
 
 
