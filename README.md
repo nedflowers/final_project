@@ -21,8 +21,7 @@ https://data.olcc.state.or.us/t/OLCCPublic/views/MarketDataTableau/MainScreen
 
 https://www.pdx.edu/population-research/census-data-oregon
 
-
-## Tools 
+<!-- ## Tools  -->
 
 ### Quick DBD
 https://app.quickdatabasediagrams.com/#/
@@ -31,16 +30,23 @@ https://app.quickdatabasediagrams.com/#/
 https://www.tableau.com/
 
 ### Jupyter Notebook
+Used for developing python code.
 
 ### PgAdmin4
+A Database Studio that we used to connect to AWS and confirm proper table setup, and develop SQL queries.
 
 ### AWS
 https://s3.console.aws.amazon.com/s3/buckets/myosus32022buk?region=us-west-2
-![AWSview](/imgs/AWS-Bucket.png)
+<!-- ![AWSview](/imgs/AWS-Bucket.png) -->
+https://myosus32022buk.s3.amazonaws.com/County%20Product%20Trend_Full%20Data_data.csv
+https://myosus32022buk.s3.amazonaws.com/census_estimates.csv
+
 
 ### Google Colab
+A Convienent place to store and run Python/Jupyter Notebook Code
 
 ### Google Slides
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
 #### Presentation
 https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/PREZ/Copy%20of%20CannaPres.pdf
@@ -49,23 +55,37 @@ https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/PREZ
 https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/DASH/DashStory.pdf
 
 ### Git
-
-
-### Communication Protocols
--	Check Slack daily, be aware of any conversation in the group chat.
-
--	Discord or Zoom voice meetings once a week, minimum, outside of class.
-
--	Team Lead will transcribe notes at each meeting on Google Docs, accessible to all team members.
+This media aka https://github.com
 
 ### Database 
-https://github.com/nedflowers/final_project/tree/main/second_segment/DB
+Postgres is a Relational Database we use to store our data in tables.
+
+<!-- https://github.com/nedflowers/final_project/tree/main/second_segment/DB -->
 
 ### Model 
-
-https://github.com/nedflowers/final_project/blob/main/first_segment/ML_Mockup.ipynb
+https://github.com/nedflowers/final_project/main/forth_segment_final/MachineLearningModel.md
 
 ## Summary
+Our results using Linear Regression render
+<table>
+	<tr><td>&nbsp;</td><td>Predicted</td><td>Observed</td><td>Residual</td><td>Abs. Error</td></tr>
+	<tr><td>0</td><td>-1.035797e+05</td><td>849</td><td>-1.044287e+05</td><td>1.044287e+05</td></tr>
+	<tr><td>1</td><td>-1.680917e+05</td><td>13012</td><td>-1.811037e+05</td><td>1.811037e+05</td></tr>
+	<tr><td>2</td><td>4.534763e+05</td><td>10</td><td>4.534663e+05</td><td>4.534663e+05</td></tr>
+	<tr><td>3</td><td>3.419492e+06</td><td>1818879</td><td>1.600613e+06</td><td>1.600613e+06</td></tr>
+	<tr><td>4</td><td>7.504363e+05</td><td>68059</td><td>6.823773e+05</td><td>6.823773e+05</td></tr>
+	<tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+	<tr><td>7130</td><td>-3.575317e+05</td><td>7556</td><td>-3.650877e+05</td><td>3.650877e+05</td></tr>
+	<tr><td>7131</td><td>-4.317717e+05</td><td>22591</td><td>-4.543627e+05</td><td>4.543627e+05</td></tr>
+	<tr><td>7132</td><td>-1.624597e+05</td><td>43260</td><td>-2.057197e+05</td><td>2.057197e+05</td></tr>
+	<tr><td>7133</td><td>1.125476e+06</td><td>679291</td><td>4.461853e+05</td><td>4.461853e+05</td></tr>
+	<tr><td>7134</td><td>1.913956e+06</td><td>3190012</td><td>-1.276056e+06</td><td>1.276056e+06</td></tr>
+</table>
+
+These results seem to indicate our model is not working properly.
+
+After conuslting with both Teachers(Niño Yosinao), and a TA(Shan Jiang), we were made aware that using a Bin for the Sales amount, and using a Random Forest Classifier would be the next Method to use in trying to get our Machine Learning Accuracy working to expectations. As our project is right now we have a Linear Regression Model, and it creates co-efficients, but they are not in line with our expectations. Anouther benift of using a Random Forest Classifier would be it would allow us to create a confusion matrix, right now I dont believe we have results that would facilitate creating one.  
+
 
 <!-- no done but will add this in  
 DataInteraction and Program Implmentation:
@@ -77,39 +97,14 @@ and we use SQLAlchemy for working with the SQL Tables(through the use of conn.ex
 and some data cleaning and trimming.
 After the data preparations are complete what is available is a dataset we can do ML on.
 9,514 rows and 7 columns
-ID			int
+ID		int
 county		obj/text
-population		int
-salesmonth		float/int
-salesyear		float/int
+population	int
+salesmonth	float/int
+salesyear	float/int
 product		obj/text
 marketshare	float/int
-sales			float/int
-
-Results of Analysis with Machine Learning 
--------------------------------------------------------------------
-
-A ML Model is created with Linear Regression.
-We chose Linear Regression for our model because we have sales data that is increasing over time, so of our available choices, it seems to be the one that will fit our data.
-One downside is it may be very simple.
--------------------------------------------------------------------
-Our results so far render
-			Predicted		Observed		Residual		Abs. Error
-0			-1.035797e+05	849			-1.044287e+05	1.044287e+05
-1			-1.680917e+05	13012			-1.811037e+05	1.811037e+05
-2			4.534763e+05	10			4.534663e+05	4.534663e+05
-3			3.419492e+06	1818879		1.600613e+06	1.600613e+06
-4			7.504363e+05	68059			6.823773e+05	6.823773e+05
-...			...			...			...	...
-7130			-3.575317e+05	7556			-3.650877e+05	3.650877e+05
-7131			-4.317717e+05	22591			-4.543627e+05	4.543627e+05
-7132			-1.624597e+05	43260			-2.057197e+05	2.057197e+05
-7133			1.125476e+06	679291		4.461853e+05	4.461853e+05
-7134			1.913956e+06	3190012		-1.276056e+06	1.276056e+06
-
-These results do not seem indicate our model is working properly.
-
-After conuslting with both Teachers(Niño Yosinao), and a TA(Shan Jiang), we were made aware that using a Bin for the Sales amount, and using a Random Forest Classifier would be the next Method to use in trying to get our Machine Learning Accuracy working to expectations. As our project is right now we have a Linear Regression Model, and it creates co-efficients, but they are not in line with our expectations. Anouther benift of using a Random Forest Classifier would be it would allow us to create a confusion matrix, right now I dont believe we have results that would facilitate creating one.  It is apparent, we as a team would have benifited from discussing our ML issues with a teaching staff person sooner.
+sales		float/int
 
 
 
