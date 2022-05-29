@@ -68,7 +68,7 @@ An early(but working) version of the SQL we use to do this is shown in this text
 
 (We have since moved the SQL code into SQL-Alcehmy/Python file below)
 
-https://github.com/nedflowers/final_project/main/forth_segment_final/cannadata.sql.txt
+[cannadata.sql.txt](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/cannadata.sql.txt)
 
 <!-- https://github.com/nedflowers/final_project/tree/main/second_segment/DB -->
 
@@ -96,9 +96,12 @@ After the data preparations are complete what is available is a dataset we can d
 
 ## Model 
 This is complex enough it is broken down in a linked ReadMe
-https://github.com/nedflowers/final_project/main/forth_segment_final/MachineLearningModel.md
+
+[MachineLearningModel.md](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/MachineLearningModel.md)
+
 Here is the code
-https://github.com/nedflowers/final_project/main/forth_segment_final/AWSMachineLearningv2done.ipynb
+
+[AWSMachineLearningv2done.ipynb](https://github.com/nedflowers/final_project/blob/BE_final_project/forth_segment_final/AWSMachineLearningv2done.ipynb)
 
 ## Summary
 Our results using Linear Regression render
