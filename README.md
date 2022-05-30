@@ -113,9 +113,6 @@ Our results using Linear Regression render
 
 These results seem to indicate our model is not working properly.
 
-After conuslting with Niño Yosinao, and Shan Jiang, we were made aware that using a Bin for the Sales amount, and using a Random Forest Classifier, would help us improve the accuracy. 
-Using a Random Forest Classifier would also allow us to create a confusion matrix, a Linear Regression Model doesn't facilitate creating one.
-
 ### [Random Forest Classifier](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/AWSMLv3RandomForestClassifier.ipynb)
 
 ## Summary
