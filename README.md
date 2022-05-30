@@ -59,6 +59,8 @@ https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/PREZ
 ## Dashboard
 https://public.tableau.com/app/profile/pau.rodriguez/viz/OregonCannabisandHempSales/CannabisSalesDashboard#1
 
+![dash.png](https://github.com/nedflowers/final_project/blob/main/imgs/dash.PNG.jpg)
+
 
 ## Database 
 Postgres is a Relational Database we use to store our data in tables. Some data preprocessing occurs here, including merging our two datasets into one
