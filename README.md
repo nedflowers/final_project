@@ -85,6 +85,8 @@ This is complex enough it is broken down in a linked ReadMe
 [MachineLearningModel.md](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/MachineLearningModel.md)
 
 Here is the code
+Linear Regression(Old Version)
+[AWSMachineLearningv2done.ipynb](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/AWSMachineLearningv2done.ipynb)
 
 [AWSMachineLearningv2done.ipynb](https://github.com/nedflowers/final_project/blob/BE_final_project/forth_segment_final/AWSMachineLearningv2done.ipynb)
 
@@ -120,7 +122,14 @@ After conuslting with both Teachers(Niño Yosinao), and a TA(Shan Jiang), we wer
 
 
 
+Random Forest Classifier
+[AWSMLv3RandomForestClassifier.ipynb](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/AWSMLv3RandomForestClassifier.ipynb)
 
+## Summary
+Our results using the Random Forest Classifier were much better than the Linear Regression
+![ConfusionMatrix](https://github.com/nedflowers/final_project/blob/main/imgs/ConfusionMatrix.png)
 
+As Shown the Bins are largly predicted succefully.
+A Note-worthy point for consideration; The Model could be used to predict future sales, but it would need Market-Share Data, this could be provided by taking the mean market share per county per product, and using that with the other features.
 
 
