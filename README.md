@@ -59,7 +59,7 @@ https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/PREZ
 ## Dashboard
 https://public.tableau.com/app/profile/pau.rodriguez/viz/OregonCannabisandHempSales/CannabisSalesDashboard#1
 
-![dash.png](https://github.com/nedflowers/final_project/blob/main/imgs/dash.PNG.jpg)
+![dash3.png](https://github.com/nedflowers/final_project/blob/main/imgs/dash3.png
 
 
 ## Database 
