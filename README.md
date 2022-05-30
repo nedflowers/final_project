@@ -97,7 +97,8 @@ Here is the code
 Linear Regression(Old Version)
 [AWSMachineLearningv2done.ipynb](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/AWSMachineLearningv2done.ipynb)
 
-The Linear Regression results are not very usefull. After conuslting with Niño Yosinao, and Shan Jiang, we were made aware that using a Bin for the Sales amount, and using a Random Forest Classifier should be a better Model to get better accuracy scores. Using a Random Forest Classifier would also allow us to create a confusion matrix, right now I dont believe the Linear Regression results would facilitate creating one.
+The Linear Regression results are not very usefull. After conuslting with Niño Yosinao, and Shan Jiang, we were made aware that using a Bin for the Sales amount, and using a Random Forest Classifier, would help us improve the accuracy. 
+Using a Random Forest Classifier would also allow us to create a confusion matrix, a Linear Regression Model doesn't facilitate creating one.
 
 Random Forest Classifier
 [AWSMLv3RandomForestClassifier.ipynb](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/AWSMLv3RandomForestClassifier.ipynb)
@@ -106,7 +107,8 @@ Random Forest Classifier
 Our results using the Random Forest Classifier were much better than the Linear Regression
 ![ConfusionMatrix](https://github.com/nedflowers/final_project/blob/main/imgs/ConfusionMatrix.png)
 
-As Shown the Bins are largly predicted succefully.
-A Note-worthy point for consideration; The Model could be used to predict future sales, but it would need Market-Share Data, this could be provided by taking the mean market share per county per product, and using that with the other features.
+As shown in the above image the Sales-Amount-Bins are predicted succefully(Accuracy of 0.8528 is relly good!)
+A Note-worthy point for consideration; The Model could be used to predict future sales, but it would need Market-Share Data.
+This could be provided by taking the mean market share per county per product, and using that with the other features.
 
 
