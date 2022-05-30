@@ -115,10 +115,7 @@ These results seem to indicate our model is not working properly.
 
 After conuslting with both Teachers(Niño Yosinao), and a TA(Shan Jiang), we were made aware that using a Bin for the Sales amount, and using a Random Forest Classifier would be the next Method to use in trying to get our Machine Learning Accuracy working to expectations. As our project is right now we have a Linear Regression Model, and it creates co-efficients, but they are not in line with our expectations. Anouther benift of using a Random Forest Classifier would be it would allow us to create a confusion matrix, right now I dont believe we have results that would facilitate creating one.  
 
-
-
-Random Forest Classifier
-[AWSMLv3RandomForestClassifier.ipynb](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/AWSMLv3RandomForestClassifier.ipynb)
+### [Random Forest Classifier](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/AWSMLv3RandomForestClassifier.ipynb)
 
 ## Summary
 Our results using the Random Forest Classifier were much better than the Linear Regression
