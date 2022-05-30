@@ -79,16 +79,6 @@ After the data preparations are complete what is available is a [dataset](https:
 	<tr><td>sales</td><td>float/int</td></tr>
 </table>
 
-## Model 
-This is complex enough it is broken down in a linked ReadMe
-
-[MachineLearningModel.md](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/MachineLearningModel.md)
-
-Here is the code
-Linear Regression(Old Version)
-[AWSMachineLearningv2done.ipynb](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/AWSMachineLearningv2done.ipynb)
-
-[AWSMachineLearningv2done.ipynb](https://github.com/nedflowers/final_project/blob/BE_final_project/forth_segment_final/AWSMachineLearningv2done.ipynb)
 
 ## Presentation
 Follow [this link](https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/PREZ/Copy%20of%20CannaPres.pdf) to view our Google Slides presentation.
@@ -98,29 +88,16 @@ Interact with the market data [here.](https://public.tableau.com/views/OregonCan
 
 ![dash3.png](https://github.com/nedflowers/final_project/blob/main/imgs/dash3.png)
 
+## Model 
+This is complex enough it is broken down in a linked ReadMe
 
-## Summary
-Our results using Linear Regression render
-<table>
-	<tr><td>&nbsp;</td><td>Predicted</td><td>Observed</td><td>Residual</td><td>Abs. Error</td></tr>
-	<tr><td>0</td><td>-1.035797e+05</td><td>849</td><td>-1.044287e+05</td><td>1.044287e+05</td></tr>
-	<tr><td>1</td><td>-1.680917e+05</td><td>13012</td><td>-1.811037e+05</td><td>1.811037e+05</td></tr>
-	<tr><td>2</td><td>4.534763e+05</td><td>10</td><td>4.534663e+05</td><td>4.534663e+05</td></tr>
-	<tr><td>3</td><td>3.419492e+06</td><td>1818879</td><td>1.600613e+06</td><td>1.600613e+06</td></tr>
-	<tr><td>4</td><td>7.504363e+05</td><td>68059</td><td>6.823773e+05</td><td>6.823773e+05</td></tr>
-	<tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
-	<tr><td>7130</td><td>-3.575317e+05</td><td>7556</td><td>-3.650877e+05</td><td>3.650877e+05</td></tr>
-	<tr><td>7131</td><td>-4.317717e+05</td><td>22591</td><td>-4.543627e+05</td><td>4.543627e+05</td></tr>
-	<tr><td>7132</td><td>-1.624597e+05</td><td>43260</td><td>-2.057197e+05</td><td>2.057197e+05</td></tr>
-	<tr><td>7133</td><td>1.125476e+06</td><td>679291</td><td>4.461853e+05</td><td>4.461853e+05</td></tr>
-	<tr><td>7134</td><td>1.913956e+06</td><td>3190012</td><td>-1.276056e+06</td><td>1.276056e+06</td></tr>
-</table>
+[MachineLearningModel.md](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/MachineLearningModel.md)
 
-These results seem to indicate our model is not working properly.
+Here is the code
+Linear Regression(Old Version)
+[AWSMachineLearningv2done.ipynb](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/AWSMachineLearningv2done.ipynb)
 
-After conuslting with both Teachers(Niño Yosinao), and a TA(Shan Jiang), we were made aware that using a Bin for the Sales amount, and using a Random Forest Classifier would be the next Method to use in trying to get our Machine Learning Accuracy working to expectations. As our project is right now we have a Linear Regression Model, and it creates co-efficients, but they are not in line with our expectations. Anouther benift of using a Random Forest Classifier would be it would allow us to create a confusion matrix, right now I dont believe we have results that would facilitate creating one.  
-
-
+The Linear Regression results are not very usefull. After conuslting with Niño Yosinao, and Shan Jiang, we were made aware that using a Bin for the Sales amount, and using a Random Forest Classifier should be a better Model to get better accuracy scores. Using a Random Forest Classifier would also allow us to create a confusion matrix, right now I dont believe the Linear Regression results would facilitate creating one.
 
 Random Forest Classifier
 [AWSMLv3RandomForestClassifier.ipynb](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/AWSMLv3RandomForestClassifier.ipynb)
