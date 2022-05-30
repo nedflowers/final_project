@@ -41,23 +41,22 @@ https://s3.console.aws.amazon.com/s3/buckets/myosus32022buk?region=us-west-2 -->
 - #### [Source Population Data](https://myosus32022buk.s3.amazonaws.com/census_estimates.csv)
 
 ### Google Colab
-A Convienent place to store and run Python/Jupyter Notebook Code
+- A Convienent place to store and run Python/Jupyter Notebook Code
 <!-- https://colab.research.google.com/drive/10GP8dXiVwqJu2Y1AZJfR4IOSOO9fgVPP   AWScsvToDBwSQLmerge.ipynb -->
 <!-- https://colab.research.google.com/drive/1SoEdLRvutqdlRRBVBOYx1OXHd_psNM_j   AWSMachineLearningv2done.ipynb -->
 
 
 ## Database 
-Postgres is a Relational Database we use to store our data in tables. Some data preprocessing occurs here, including merging our two datasets into one.
+Postgres is a Relational Database we use to store our data in tables. Some data preprocessing occurs here, including [merging](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/cannadata.sql.txt) our two datasets into one.
 
 ![ShowingDatasourcesAndMerge](/imgs/DatasetSelectionMergePresentationHalfSize.png)
 
-An early(but working) version of the SQL we use to do this is shown in this text file
+<!--  An early(but working) version of the SQL we use to do this is shown in this text file
+(We have since moved the SQL code into SQL-Alcehmy/Python file below) -->
 
-(We have since moved the SQL code into SQL-Alcehmy/Python file below)
+<!-- View PostgreSQL[script](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/cannadata.sql.txt). -->
 
-[cannadata.sql.txt](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/cannadata.sql.txt)
-
-<!-- https://github.com/nedflowers/final_project/tree/main/second_segment/DB -->
+<!--https://github.com/nedflowers/final_project/tree/main/second_segment/DB -->
 
 ## Data Processing 
 ### Python and Spark and SQLAlchemy
