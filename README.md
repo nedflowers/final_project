@@ -10,60 +10,46 @@ In order gain valuable information about the cannabis industry in Oregon, we nee
 The data exploration phase seemed pretty straight forward. One data set has sales information over time by product type and by county. The other data set has population information for each county in Oregon. We looked at each data set and performed some clean-up in order to drop redundant information. We joined data the sets using a LEFT join on the two data sets joining by County, favoring the Sales data over the Population.
 
 Once we had the combined data sets in one data frame, we started the data analysis. The analysis consisted of taking all of the data and condensing it down to only what we needed. We dropped columns that contained market share by county and other superfluous information. Because we were interested in predicting future sales based on previous sales by county and product type over time, we thought linear regression would be the best model for machine learning. We used the Sales column as the target and rest of the columns as the features. The features columns included: County, Product Type, Date, and County Population.
+
 ## Sources
 
-### Oregon Marijuana Market Data
- https://www.oregon.gov/olcc/marijuana/Pages/Marijuana-Market-Data.aspx
+### [Oregon Marijuana Market Data](https://www.oregon.gov/olcc/marijuana/Pages/Marijuana-Market-Data.aspx)
 
-### Portland State University - Census Data for Oregon
+### [Portland State University - Census Data for Oregon](https://www.pdx.edu/population-research/census-data-oregon)
 
-https://www.pdx.edu/population-research/census-data-oregon
-
-# Tools
+## Tools Used
 
 <!-- ## Quick DBD
 https://app.quickdatabasediagrams.com/#/
  -->
-## Tableau
-[https://www.tableau.com/](https://public.tableau.com/app/profile/pau.rodriguez/viz/OregonCannabisandHempSales/CannabisSalesDashboard#1)
+### [Tableau](https://public.tableau.com/app/profile/pau.rodriguez/viz/OregonCannabisandHempSales/CannabisSalesDashboard#1)
 
-## Jupyter Notebook
+### Jupyter Notebook
 Used for developing python code.
 
-## PgAdmin4
+### PgAdmin4
 A Database Studio that we used to connect to AWS and confirm proper table setup, and develop SQL queries.
 
-## AWS
+### AWS
 A Cloud based service that we use to store our CSV files and Postgres Database.
 <!-- 
 https://s3.console.aws.amazon.com/s3/buckets/myosus32022buk?region=us-west-2 -->
 
 ![AWSview](/imgs/AWS-Bucket.png)
 
-https://myosus32022buk.s3.amazonaws.com/County%20Product%20Trend_Full%20Data_data.csv  : Sales Data
+#### [Sales Data](https://myosus32022buk.s3.amazonaws.com/County%20Product%20Trend_Full%20Data_data.csv)
 
-https://myosus32022buk.s3.amazonaws.com/census_estimates.csv  : Population Data
+#### [Population Data](https://myosus32022buk.s3.amazonaws.com/census_estimates.csv)
 
-
-## Google Colab
+### Google Colab
 A Convienent place to store and run Python/Jupyter Notebook Code
 <!-- https://colab.research.google.com/drive/10GP8dXiVwqJu2Y1AZJfR4IOSOO9fgVPP   AWScsvToDBwSQLmerge.ipynb -->
 <!-- https://colab.research.google.com/drive/1SoEdLRvutqdlRRBVBOYx1OXHd_psNM_j   AWSMachineLearningv2done.ipynb -->
 
-## Google Slides
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-
-## Presentation
-https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/PREZ/Copy%20of%20CannaPres.pdf
-
-## Dashboard
-https://public.tableau.com/app/profile/pau.rodriguez/viz/OregonCannabisandHempSales/CannabisSalesDashboard#1
-
-![dash3.png](https://github.com/nedflowers/final_project/blob/main/imgs/dash3.png
-
 
 ## Database 
-Postgres is a Relational Database we use to store our data in tables. Some data preprocessing occurs here, including merging our two datasets into one
+Postgres is a Relational Database we use to store our data in tables. Some data preprocessing occurs here, including merging our two datasets into one.
+
 ![ShowingDatasourcesAndMerge](/imgs/DatasetSelectionMergePresentationHalfSize.png)
 
 An early(but working) version of the SQL we use to do this is shown in this text file
@@ -76,12 +62,11 @@ An early(but working) version of the SQL we use to do this is shown in this text
 
 ## Data Processing 
 ### Python and Spark and SQLAlchemy
-https://github.com/nedflowers/final_project/blob/BE_final_project/forth_segment_final/AWScsvToDBwSQLmerge.ipynb
 
 We use Spark for importing the AWS-CSV to the Postgres DB,
 and we use SQLAlchemy for working with the SQL Tables(through the use of conn.execute), specifically joining the two dataset on county,
 and some data cleaning and trimming(The SQL codes are very similar if not identical to the SQL/text file above, and are shown in comments).
-After the data preparations are complete what is available is a dataset we can do ML on.
+After the data preparations are complete what is available is a [dataset](https://github.com/nedflowers/final_project/blob/BE_final_project/forth_segment_final/AWScsvToDBwSQLmerge.ipynb) we can do ML on.
 
 9,514 rows and 7 columns (This is the DatasetSelectionMergePresentationHalfSize.png image shown above)
 
@@ -104,6 +89,15 @@ This is complex enough it is broken down in a linked ReadMe
 Here is the code
 
 [AWSMachineLearningv2done.ipynb](https://github.com/nedflowers/final_project/blob/BE_final_project/forth_segment_final/AWSMachineLearningv2done.ipynb)
+
+## Presentation
+Follow [this link](https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/PREZ/Copy%20of%20CannaPres.pdf) to view our Google Slides presentation.
+
+### Dashboard
+Interact with the market data [here.](https://public.tableau.com/views/OregonCannabisandHempSales/CannabisSalesDashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+![dash3.png](https://github.com/nedflowers/final_project/blob/main/imgs/dash3.png)
+
 
 ## Summary
 Our results using Linear Regression render
