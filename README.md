@@ -25,7 +25,7 @@ https://www.pdx.edu/population-research/census-data-oregon
 https://app.quickdatabasediagrams.com/#/
  -->
 ## Tableau
-https://www.tableau.com/
+[https://www.tableau.com/](https://public.tableau.com/app/profile/pau.rodriguez/viz/OregonCannabisandHempSales/CannabisSalesDashboard#1)
 
 ## Jupyter Notebook
 Used for developing python code.
