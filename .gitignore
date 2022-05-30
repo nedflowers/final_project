@@ -65,6 +65,13 @@ db.sqlite3-journal
 instance/
 .webassets-cache
 
+# IMGS
+imgs/
+dash3.jpg
+dash4.png
+dash2.PNG
+
+
 # Scrapy stuff:
 .scrapy
 
