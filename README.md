@@ -57,7 +57,7 @@ A Convienent place to store and run Python/Jupyter Notebook Code
 https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/PREZ/Copy%20of%20CannaPres.pdf
 
 ## Dashboard
-(https://public.tableau.com/app/profile/pau.rodriguez/viz/OregonCannabisandHempSales/CannabisSalesDashboard#1)
+https://public.tableau.com/app/profile/pau.rodriguez/viz/OregonCannabisandHempSales/CannabisSalesDashboard#1
 
 
 ## Database 
