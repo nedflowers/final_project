@@ -80,15 +80,10 @@ After the data preparations are complete what is available is a [dataset](https:
 </table>
 
 ## Model 
-This is complex enough it is broken down in a linked ReadMe
+The model's analysis is broken down in this [ReadMe](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/MachineLearningModel.md).
 
-[MachineLearningModel.md](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/MachineLearningModel.md)
+First version of code - [Linear Regression](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/AWSMachineLearningv2done.ipynb).
 
-Here is the code
-Linear Regression(Old Version)
-[AWSMachineLearningv2done.ipynb](https://github.com/nedflowers/final_project/blob/main/forth_segment_final/AWSMachineLearningv2done.ipynb)
-
-[AWSMachineLearningv2done.ipynb](https://github.com/nedflowers/final_project/blob/BE_final_project/forth_segment_final/AWSMachineLearningv2done.ipynb)
 
 ## Presentation
 Follow [this link](https://github.com/nedflowers/final_project/blob/main/second_segment/Slides/PREZ/Copy%20of%20CannaPres.pdf) to view our Google Slides presentation.
