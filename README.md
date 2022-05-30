@@ -13,33 +13,32 @@ Once we had the combined data sets in one data frame, we started the data analys
 
 ## Sources
 
-### [Oregon Marijuana Market Data](https://www.oregon.gov/olcc/marijuana/Pages/Marijuana-Market-Data.aspx)
+- ### [Oregon Marijuana Market Data](https://www.oregon.gov/olcc/marijuana/Pages/Marijuana-Market-Data.aspx)
 
-### [Portland State University - Census Data for Oregon](https://www.pdx.edu/population-research/census-data-oregon)
+- ### [Portland State University - Census Data for Oregon](https://www.pdx.edu/population-research/census-data-oregon)
 
 ## Tools Used
-
 <!-- ## Quick DBD
 https://app.quickdatabasediagrams.com/#/
  -->
-### [Tableau](https://public.tableau.com/app/profile/pau.rodriguez/viz/OregonCannabisandHempSales/CannabisSalesDashboard#1)
+- ### [Tableau](https://public.tableau.com/app/profile/pau.rodriguez/viz/OregonCannabisandHempSales/CannabisSalesDashboard#1)
 
-### Jupyter Notebook
-Used for developing python code.
+- ### Jupyter Notebook
+	- Used for developing python code.
 
-### PgAdmin4
-A Database Studio that we used to connect to AWS and confirm proper table setup, and develop SQL queries.
+- ### PgAdmin4
+	- A Database Studio that we used to connect to AWS and confirm proper table setup, and develop SQL queries.
 
-### AWS
-A Cloud based service that we use to store our CSV files and Postgres Database.
+- ### AWS
+	- A Cloud based service that we use to store our CSV files and Postgres Database.
 <!-- 
 https://s3.console.aws.amazon.com/s3/buckets/myosus32022buk?region=us-west-2 -->
 
 ![AWSview](/imgs/AWS-Bucket.png)
 
-#### [Sales Data](https://myosus32022buk.s3.amazonaws.com/County%20Product%20Trend_Full%20Data_data.csv)
+- #### [Source Sales Data](https://myosus32022buk.s3.amazonaws.com/County%20Product%20Trend_Full%20Data_data.csv)
 
-#### [Population Data](https://myosus32022buk.s3.amazonaws.com/census_estimates.csv)
+- #### [Source Population Data](https://myosus32022buk.s3.amazonaws.com/census_estimates.csv)
 
 ### Google Colab
 A Convienent place to store and run Python/Jupyter Notebook Code
