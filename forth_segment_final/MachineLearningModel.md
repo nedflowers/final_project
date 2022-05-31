@@ -1,56 +1,78 @@
-Our python jupyter notebook starts our Machine Learning Model by importing the CSV that contains our dataset; for now its County Product Trend_Full Data_data.csv
+Our jupyter notebook starts our Machine Learning Model by importing the dataset that was resides and was cleaned in AWS.
+[pngrawdatasetforML](https://github.com/nedflowers/final_project/blob/main/imgs/rawdatasetforML.png)
+We convert our columns to the datatypes we want, int are better than floats for many of our columns.
 
-We convert the "Month Year" column to a datetime, so it can be split into dateparts later, and eventually encoded.
-Dropping columns "Month Name", "Month Year", "Tooltip Date", "Date", "Sales Detail" because they are not needed, and keeping them may confuse the Regression Model.
-Next we have an odd ocuurance of two rows for every Date/Type/County, some even have six occurances.  Due diligence is perform with calculations to make sure aggregating these values does not make our data invalid.(We total a individual County/Date/Type and divide that by a total for County/Date)
-<Img1>
-<Img2>
-We drop the "Market Share County" coulmn now that its not needed.
-Since we want to encode our date data, we split the Month and Year into separate columns.
+We remove the product type 'Industrial Hemp' and any rows with sales data having a market share of 0.00%.
+There is not enough data for this product type.
+```
+cannabis_df = cannabis_df[cannabis_df["product"]!='Industrial Hemp']
+cannabis_df = cannabis_df[cannabis_df["marketshare"]!=0.00]
+```
 
-A quick scan of each columns unique values, shows we have a feature set as follows
+In order to create bins for our sales data, we need to see information about that column.
+Using describe allows us to see the Min, Max, and Standard Deviation.
+Our data has a mean of 497,947, with a std of 1,327,071.
+Showing a histogram of the sales-data shows the data is very skewd to the low end of the range(lots of small sales data, and a few HUGE numbers)
 
-ProductType: 7 Unique Values
-County: 31 Unique Values
-SalesMonth: 12 Unique Values
-SalesYear: 7 Unique Values
+Through trial and error, a intuitive set of bins is arrived at (choosing bin-size-number can be very subjective)
+```
+bins = [-np.inf,10000,50000,100000,500000,1000000,np.inf]
+```
+```
+100kto500k    2785
+10kto50k      1963
+50kto100k     1385
+10ksmaller    1097
+1mgreater     1058
+500kto1m       987
+Name: bins, dtype: int64
+```
 
-Our feature selection/engineering is relativly simple, from the CSV we have:
-Date         :we dont need more than one date data, duplicate, we drop this
-Product Type :KEEP-this the the product type
-County       :KEEP-this is the county name
-Month Name   :we dont need more than one date data, duplicate, we drop this
-Month Year   :KEEP-has the time data we need, month and year
-Tooltip Date :we dont need more than one date data, duplicate, we drop this
-Market Share County :
-Sales        :KEEP-this is our sales data
-Sales Detail :This is a duplicate of Sales, we drop this
+We use OneHotEncoder to encode County into 31 feature columns, and Product into 6 feature columns
+SalesMonth, SalesYear, and population are left as numeric.
+Population is manually scaled by dividing by 1,000, giving a range of 7(k) to 816(k).
+We could play with this and put population into bins and see the effect on our results, but time doesn't allow for that adventure.
 
+We end up with a dataset with 41 Features and 1 Result column.(9,050 rows)
 
-In order to do our train-test-split we first use OneHotEncoder on our dataset
-This converts our Features into numeric data for the ML model to learn from.
-We split out the "Sales" column into the Y
+<table>
+  <tr><td>ProductType:</td><td>6 Unique Values</td></tr>
+  <tr><td>County:</td><td>31 Unique Values</td></tr>
+  <tr><td>SalesMonth:</td><td>12 Unique Values</td></tr>
+  <tr><td>SalesYear:</td><td>7 Unique Values</td></tr>
+</table>
+
+We set the "Sales" column into Y
 And we set the X to everything but the "Sales"
 
 Are X_train, X_test, y_train, y_test variables 
-are set with train_test_split(X, y, random_state=78)
+are set with 
+```
+train_test_split(X, y, random_state=78)
+```
 
-we get 
-rows: 7135 X_train
-rows: 2379 X_test
-rows: 7135 y_train
-rows: 2379 y_test
-
-we run a scaler on the X_train and X_test
+We get 
+<table>
+  <tr><td>X_train: </td><td>6787</td></tr>
+  <tr><td>X_test</td><td>2263</td></tr>
+  <tr><td>y_train</td><td>6787</td></tr>
+  <tr><td>y_test</td><td>2263</td></tr>
+</table>
 
 A ML Model is created with:
-# Creating the Linear Regression instance.
-model = LinearRegression()
+```
+# Creating the RandomForestClassifier instance.
+model = RandomForestClassifier(n_estimators=100)
 # Fitting the model.
-model = model.fit(X_train_scaled, y_train)
+#model = model.fit(X_train_scaled, y_train)
+model = model.fit(X_train, y_train)
+```
 
-We chose Linear Regression for our model because we have sales data that is increasing over time, so of our available choices, it seems to be the one that will fit our data.
-One downside is it may be very simple.
+We arrive at:
+
+Accuracy: 0.8444542642509942
+
+[MLreadmeConfusionMatrix](https://github.com/nedflowers/final_project/blob/main/imgs/MLreadmeConfusionMatrix.png)
 
 
 
