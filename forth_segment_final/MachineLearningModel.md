@@ -1,5 +1,6 @@
 Our jupyter notebook starts our Machine Learning Model by importing the dataset that was resides and was cleaned in AWS.
 ![rawdatasetforML](https://github.com/nedflowers/final_project/blob/main/imgs/rawdatasetforML.png)
+
 We convert our columns to the datatypes we want, int are better than floats for many of our columns.
 
 We remove the product type 'Industrial Hemp' and any rows with sales data having a market share of 0.00%.
