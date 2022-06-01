@@ -86,7 +86,7 @@ First version of code - [Linear Regression](https://github.com/nedflowers/final_
 
 
 ## Presentation
-Follow [this link](https://github.com/nedflowers/final_project/blob/main/fourth_segment_final/CannaPres.pdf) to view our Google Slides presentation.
+Follow [this link](https://github.com/nedflowers/final_project/blob/PR_final_project/fourth_segment_final/CannaPres.pdf) to view our Google Slides presentation.
 
 ### Dashboard
 Interact with the market data [here.](https://public.tableau.com/views/OregonCannabisandHempSales/CannabisSalesDashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
