@@ -1,0 +1,120 @@
+In order gain valuable information about the cannabis industry in Oregon, we needed access to data sets. The two main data sets we selected were CSVs about both cannabis sales in Oregon(by County, Product, and Month x 6yrs) from the Oregon Liquor and Cannabis Commission (OLCC), and a population data set with populations by county in Oregon from the most recent census data.
+
+
+(The dataexplortion....)
+(type and country...)
+preformed 
+to
+performed
+
+
+
+Next, we joined data sets using an inner join on the two data sets joining the counties.
+to
+We joined data sets using an LEFT join on the two data sets joining by county, favoring the sales data over the Population.
+
+
+
+We used the sales column
+to
+We used the Sales column
+
+
+
+
+Technologies, languages, tools, and algorithms used throughout the project
+--------------------------------------------------------------------------
+
+DataSource: CSV From
+1:
+County Product Trend_Full Data_data.csv
+https://data.olcc.state.or.us/t/OLCCPublic/views/MarketDataTableau/CountyMap?%3Aembed=y&%3AisGuestRedirectFromVizportal=y
+
+2:
+census_estimates.csv
+http://???????????????????????????????????????????????????????
+
+
+DataStorage: AWS-POSTGRES
+https://s3.console.aws.amazon.com/s3/buckets/myosus32022buk?region=us-west-2&tab=objects#
+<img C:\Users\brian\Desktop\OSU Class\final_project\forth_segment_final\AWS-Bucket.png>
+
+These two CSVs become
+1:
+https://myosus32022buk.s3.amazonaws.com/County%20Product%20Trend_Full%20Data_data.csv
+and
+2: 
+https://myosus32022buk.s3.amazonaws.com/census_estimates.csv
+respectivly
+
+
+DataInteraction and Program Implmentation:
+Python + Spark + SQLAlchemy
+final_project/third_segment/DB/AWScsvToDBwSQLmerge.ipynb
+
+We use Spark for importing the AWS-CSV to the Postgres DB,
+and we use SQLAlchemy for working with the SQL Tables(through the use of conn.execute), specifically joining the two dataset on county,
+and some data cleaning and trimming.
+After the data preparations are complete what is available is a dataset we can do ML on.
+9,514 rows and 7 columns
+ID			int
+county		obj/text
+population		int
+salesmonth		float/int
+salesyear		float/int
+product		obj/text
+marketshare	float/int
+sales			float/int
+
+Results of Analysis with Machine Learning 
+-------------------------------------------------------------------
+
+A ML Model is created with Linear Regression.
+We chose Linear Regression for our model because we have sales data that is increasing over time, so of our available choices, it seems to be the one that will fit our data.
+One downside is it may be very simple.
+-------------------------------------------------------------------
+Our results so far render
+			Predicted		Observed		Residual		Abs. Error
+0			-1.035797e+05	849			-1.044287e+05	1.044287e+05
+1			-1.680917e+05	13012			-1.811037e+05	1.811037e+05
+2			4.534763e+05	10			4.534663e+05	4.534663e+05
+3			3.419492e+06	1818879		1.600613e+06	1.600613e+06
+4			7.504363e+05	68059			6.823773e+05	6.823773e+05
+...			...			...			...	...
+7130			-3.575317e+05	7556			-3.650877e+05	3.650877e+05
+7131			-4.317717e+05	22591			-4.543627e+05	4.543627e+05
+7132			-1.624597e+05	43260			-2.057197e+05	2.057197e+05
+7133			1.125476e+06	679291		4.461853e+05	4.461853e+05
+7134			1.913956e+06	3190012		-1.276056e+06	1.276056e+06
+
+These results do not seem indicate our model is working properly.
+
+After conuslting with both Teachers(Niño Yosinao), and a TA(Shan Jiang), we were made aware that using a Bin for the Sales amount, and using a Random Forest Classifier would be the next Method to use in trying to get our Machine Learning Accuracy working to expectations. As our project is right now we have a Linear Regression Model, and it creates co-efficients, but they are not in line with our expectations. Anouther benift of using a Random Forest Classifier would be it would allow us to create a confusion matrix, right now I dont believe we have results that would facilitate creating one.  It is apparent, we as a team would have benifited from discussing our ML issues with a teaching staff person sooner.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
